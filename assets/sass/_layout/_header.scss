@@ -1,0 +1,142 @@
+
+
+
+
+/*--Menu Header Start--*/
+.header-section {
+	width: 100%;
+	background-color: var(--header-color);
+	padding: 20px 0 20px;
+	position: sticky;
+	top: 0;
+	z-index: 9;
+	.header-wrapper{
+		.logo-menu {
+			display: none;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+	}
+}
+.menu-fixed {
+	z-index: 999999;
+	transition: all 0.9s;
+	background-color: var(--header-color);
+	padding: 18px 0 20px;
+}
+.header-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: all 0.9s;
+	.main-menu {
+		position: relative;
+		display: flex;
+		align-items: center;
+		margin-top: -2px;
+		display: none;
+		li {
+			border-radius: 5px;
+			padding: 10px 10px 11px;
+			transition: all 0.4s;
+			position: relative;
+			a {
+				color: var(--white-color);
+				font-weight: 600;
+				font-size: 18px;
+				transition: all 0.3s;
+				font-family: 'Jost', sans-serif;
+				text-transform: capitalize;
+				display: flex;
+				align-items: center;
+				gap: 9px;
+				&:hover {
+					color: var(--white-color);
+				}
+				.icon{
+					margin-top: -3px;
+				}
+			}
+			&:hover {
+				background-color: #1A2030;
+				.sub-menu {
+					opacity: 1;
+					visibility: visible;
+					transform: scale(1);
+				}
+			}
+		}
+		.cmn-grp{
+			&:hover{
+				cursor: pointer;
+			}
+			@include flex;
+			gap: 20px;
+			display: none;
+		}
+	}
+	.mneu-btn-grp{
+		.language__wrap{
+			position: relative;
+			.flag{
+				position: absolute;
+				top: 7px;
+				left: 0;
+			}
+		}
+		.nice-select{
+			padding: 8px 40px 9px  44px;
+		}
+	}
+	.search__form{
+		form{
+			position: relative;
+			input{
+				width: 280px;
+				background: #18233F;
+				border-radius: 5px;
+				padding: 10px 0 13px 45px;
+				border: unset;
+				outline: none;
+
+			}
+			.icon{
+				position: absolute;
+				left: 10px;
+				top: 9px;
+			}
+			::placeholder{
+				color: rgba(255, 255, 255, 0.6);
+			}
+		}
+	}
+	.lang{
+		opacity: 0;
+	}
+}
+
+@media (min-width: 991px) and (max-width: 1199px){
+	.header-wrapper{
+		.logo-menu{
+			width: 110px;
+		}
+		.main-menu{
+			li{
+				padding-left: 20px;
+				a{
+					font-size: 16px;
+				}
+			}
+		}
+		.mneu-btn-grp{
+			.cmn--btn{
+				font-size: 16px;
+    			padding: 8px 20px 11px;
+			}
+		}
+	}
+}
+/*----Menu Header Start-----*/
