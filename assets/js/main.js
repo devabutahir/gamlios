@@ -1,5 +1,17 @@
 "user strict";
 
+/*All Information
+	0.1.1 Menu Header
+	0.1.2 Owl Carousel
+	0.1.3 Nice Select
+	0.1.4 CountDown
+	0.1.5 Wow Js
+	0.1.6 Magnific Popup
+	0.1.7 Password Hide
+	0.1.8 Back To Top
+	0.1.9 Preloader
+*/
+
 $(document).ready(function () {
 	//menu header bar
 	$(".header-bar").on("click", function (e) {
