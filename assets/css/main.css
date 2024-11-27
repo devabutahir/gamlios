@@ -1648,6 +1648,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.4s;
 }
 .battle__items .battles__player__wrap ul .body__items .content__body {
   display: flex;
@@ -1676,6 +1677,10 @@ p {
 .battle__items .battles__player__wrap ul li {
   border-bottom: 1px solid #374465;
   padding: 20px 0;
+}
+.battle__items .battles__player__wrap ul li:hover {
+  border-color: rgba(55, 68, 101, 0.3803921569);
+  cursor: pointer;
 }
 .battle__items .battles__player__wrap ul .last__button {
   text-align: center;

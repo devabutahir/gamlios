@@ -565,6 +565,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        transition: all 0.4s;
         .content__body{
           display: flex;
           gap: 20px;
@@ -595,6 +596,10 @@
       li{
         border-bottom: 1px solid #374465;
         padding: 20px 0;
+        &:hover{
+          border-color: #37446561;
+          cursor: pointer;
+        }
       }
       .last__button{
         text-align: center;
