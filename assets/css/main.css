@@ -820,9 +820,10 @@ p {
   width: 280px;
   background: #18233F;
   border-radius: 5px;
-  padding: 10px 0 13px 45px;
+  padding: 10px 12px 13px 45px;
   border: unset;
   outline: none;
+  font-size: 14px;
 }
 .header-wrapper .search__form form .icon {
   position: absolute;
@@ -990,6 +991,7 @@ p {
   border-radius: 30px;
   padding: 15px 20px 15px;
   margin-bottom: 30px;
+  transition: all 0.4s;
 }
 .banner__winer .amount__video .left__wrap {
   display: flex;
@@ -1006,6 +1008,9 @@ p {
 }
 .banner__winer .amount__video .left__wrap .content h6 {
   color: var(--white-color);
+}
+.banner__winer .amount__video:hover {
+  background-color: rgba(35, 50, 88, 0.8);
 }
 .banner__winer .jack__btn {
   background-color: #0E1322;
@@ -1761,12 +1766,14 @@ p {
   width: 80px;
   height: 80px;
   margin: 0 auto 20px;
+  transition: all 0.4s;
 }
 .bonus__items .thumb img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  transition: all 0.4s;
 }
 .bonus__items .content span {
   display: block;
@@ -1785,6 +1792,9 @@ p {
 }
 .bonus__items:hover {
   background-color: rgba(20, 28, 47, 0.7411764706);
+}
+.bonus__items:hover .thumb img {
+  transform: scale(1.1);
 }
 
 .provider__section .gamewins__head__wrap .provider__all {

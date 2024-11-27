@@ -689,9 +689,11 @@
     width: 80px;
     height: 80px;
     margin: 0 auto 20px;
+    transition: all 0.4s;
     img{
       @include imgw;
       object-fit: contain;
+      transition: all 0.4s;
     }
   }
   .content{
@@ -713,6 +715,11 @@
   }
   &:hover{
     background-color: #141c2fbd;
+    .thumb{
+      img{
+        transform: scale(1.1);
+      }
+    }
   }
 }
 //Bounus-Scss End
